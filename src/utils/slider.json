@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Shree Vihar Residency",
+    "price": "47,043",
+    "detail": "Sector 5, Salt Lake City, Kolkata, West Bengal",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Greenwood Enclave",
+    "price": "66,353",
+    "detail": "Hinjewadi Phase 1, Pune, Maharashtra",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Royal Palm Heights",
+    "price": "35,853",
+    "detail": "MG Road, Gurgaon, Haryana",
+    "image": "./r3.png"
+  },
+  {
+    "name": "Silver Oak Residency",
+    "price": "47,043",
+    "detail": "Whitefield Main Road, Bengaluru, Karnataka",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Lotus Park View",
+    "price": "66,353",
+    "detail": "Banjara Hills, Hyderabad, Telangana",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Sunrise Villa Estate",
+    "price": "35,853",
+    "detail": "Anna Nagar, Chennai, Tamil Nadu",
+    "image": "./r3.png"
+  }
+]

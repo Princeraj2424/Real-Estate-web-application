@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 90px;
+  background: #f9f9f9;
+}
+
+.h-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.h-wrapper.scrolled {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.h-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.h-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.h-logo {
+  height: 65px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.h-logo:hover {
+  transform: scale(1.08);
+}
+
+.h-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.h-menu a {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.h-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffae34;
+  transition: width 0.3s ease;
+}
+
+.h-menu a:hover {
+  color: #ffae34;
+}
+
+.h-menu a:hover::after,
+.h-menu a.active::after {
+  width: 100%;
+}
+
+.h-menu a.active {
+  color: #ffae34;
+}
+
+.btn {
+  background: #ffae34;
+  color: #222;
+  padding: 0.5rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #222;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .h-menu {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.97);
+    width: 230px;
+    padding: 1.5rem;
+    gap: 1.2rem;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .h-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .h-menu a {
+    font-size: 1.05rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,123 @@
+.c-wrapper {
+  padding: 3rem 2rem;
+  background: #f5f6fa;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+.contact-section {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+.contact-subtitle {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.contact-card {
+  background: #fff;
+  padding: 1.8rem 1.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 180px;
+}
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+.contact-icon {
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.contact-card.whatsapp .contact-icon {
+  background: #25D366;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+.contact-type {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1f2937;
+  margin-bottom: 0;
+}
+.contact-detail {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.4;
+  margin-top: 0;
+}
+.contact-button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+.contact-button:hover {
+  background: #0056b3;
+}
+.contact-button.whatsapp-btn {
+  background: #25D366;
+}
+.contact-button.whatsapp-btn:hover {
+  background: #1da851;
+}
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-card {
+    padding: 1.5rem 1.2rem;
+    min-height: 160px;
+  }
+  .contact-type {
+    font-size: 1rem;
+  }
+  .contact-detail {
+    font-size: 0.9rem;
+  }
+  .contact-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,26 @@
+import Header from "./components/Header/Header"; 
+import Hero from "./components/Hero/Hero"; 
+import Companies from "./components/Companies/Companies";
+import Residencies from "./components/Residencies/Residencies";
+import Value from "./components/Value/Value";
+import Contact from "./components/Contact/Contact";
+import Information from"./components/Information/Information";
+import Footer from "./components/Footer/Footer";
+
+
+function App() {
+  return (
+    <div className="app">
+     <Header /> 
+     <Hero/>
+      <Companies/>
+      <Residencies/>
+      <Value/>
+      <Contact/>
+      <Information/>
+      <Footer/>
+    </div>
+  );
+}
+
+export default App;

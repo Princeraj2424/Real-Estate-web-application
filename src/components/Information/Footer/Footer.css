@@ -1,0 +1,106 @@
+.f-wrapper {
+  background: #111827;
+  color: #f9fafb;
+  padding: 4rem 2rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.f-left, .f-center, .f-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.f-left img {
+  margin-bottom: 1rem;
+}
+
+.f-left p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.f-socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.f-socials a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #1f2937;
+  color: #f9fafb;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.f-socials a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.f-socials a:nth-child(1):hover { background: #1877f2; }
+.f-socials a:nth-child(2):hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.f-socials a:nth-child(3):hover { background: #0a66c2; }
+.f-socials a:nth-child(4):hover { background: #1da1f2; }
+
+.f-center span,
+.f-right span {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  color: #f9fafb;
+}
+
+.f-center a {
+  text-decoration: none;
+  color: #d1d5db;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.f-center a:hover { color: #3b82f6; }
+
+.f-right span.secondaryText {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.f-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #374151;
+  padding-top: 1rem;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .f-left, .f-center, .f-right {
+    align-items: center;
+  }
+  .f-center a, .f-right span.secondaryText {
+    margin-bottom: 0.5rem;
+  }
+}

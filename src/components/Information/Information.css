@@ -1,0 +1,90 @@
+.I-wrapper {
+  width: 100%;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f6fa, #e0e4f1);
+  position: relative;
+}
+
+.I-container {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.I-primaryText {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #4066ff, #ff922d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.I-primaryText span {
+  color: #4066ff;
+}
+
+.I-secondaryText {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.I-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #4066ff, #2949c6);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.I-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(64,102,255,0.3);
+}
+
+.I-icon {
+  font-size: 1.2rem;
+}
+
+/* Optional: floating circles decoration */
+.I-wrapper::before,
+.I-wrapper::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(64,102,255,0.1);
+  z-index: 0;
+}
+
+.I-wrapper::before {
+  width: 150px;
+  height: 150px;
+  top: -50px;
+  left: -50px;
+}
+
+.I-wrapper::after {
+  width: 200px;
+  height: 200px;
+  bottom: -80px;
+  right: -80px;
+}
