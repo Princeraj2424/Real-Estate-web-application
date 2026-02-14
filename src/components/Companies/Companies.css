@@ -38,23 +38,37 @@
 }
 
 @media (max-width: 768px) {
+  .c-wrapper {
+    padding: 3rem 1rem;
+  }
+
   .c-container {
     justify-content: center;
-    gap: 2rem;
-  }
-
-  .c-container img {
-    max-height: 55px;
-  }
-}
-
-@media (max-width: 480px) {
-  .c-container {
-    flex-direction: column;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .c-container img {
     max-height: 50px;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .c-wrapper {
+    padding: 2rem 0.5rem;
+  }
+
+  .c-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .c-container img {
+    max-height: 45px;
+    width: 100%;
+    max-width: 120px;
   }
 }

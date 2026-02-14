@@ -186,10 +186,33 @@ img:hover {
 }
 
 @media (max-width: 768px) {
-  .paddings { padding: 1.5rem; }
-  .primaryText { font-size: 1.5rem; }
-  .secondaryText { font-size: 0.9rem; }
+  .paddings { padding: 1rem; }
+  .primaryText { font-size: 1.4rem; }
+  .secondaryText { font-size: 0.85rem; }
   .flexStart, .flexColStart, .flexCenter { flex-direction: column; }
   .header { flex-direction: column; padding: 1rem; }
   .header nav a { margin-left: 0; margin-top: 0.5rem; }
+  .innerWidth {
+    padding: 0 10px;
+  }
+  .Button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .paddings { padding: 0.8rem; }
+  .primaryText { font-size: 1.2rem; }
+  .secondaryText { font-size: 0.8rem; }
+  .innerWidth {
+    padding: 0 8px;
+  }
+  .Button {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  img:hover {
+    transform: none;
+  }
 }

@@ -88,3 +88,44 @@
   bottom: -80px;
   right: -80px;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .I-wrapper {
+    padding: 4rem 1rem;
+  }
+  .I-container {
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+  }
+  .I-primaryText {
+    font-size: 1.6rem;
+  }
+  .I-secondaryText {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .I-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .I-wrapper {
+    padding: 3rem 0.5rem;
+  }
+  .I-container {
+    padding: 1.5rem 1rem;
+  }
+  .I-primaryText {
+    font-size: 1.3rem;
+  }
+  .I-secondaryText {
+    font-size: 0.9rem;
+  }
+  .I-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
